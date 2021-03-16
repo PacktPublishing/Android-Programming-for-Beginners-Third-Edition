@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Note to Self</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="action_add">add</string>
+    <string name="title_hint">Title</string>
+    <string name="description_hint">Description</string>
+    <string name="idea_text">Idea</string>
+    <string name="important_text">Important</string>
+    <string name="todo_text">To do</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="ok_button">OK</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="theme_title">Theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+</resources>

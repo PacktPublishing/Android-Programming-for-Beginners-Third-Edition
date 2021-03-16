@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="302dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:text="Switch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="192dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/switch1"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTransparency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Transparency"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxTint"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxTint"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="462dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="460dp"
+        android:text="Tint"
+        app:layout_constraintEnd_toEndOf="@+id/switch1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTransparency" />
+
+    <CheckBox
+        android:id="@+id/checkBoxReSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Re-size"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxTint"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTint" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxReSize"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxReSize"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonLondon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="London" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBeijing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beijing" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNewYork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New York" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="22dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="25dp"
+        android:text="Capture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="27dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="1278dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
