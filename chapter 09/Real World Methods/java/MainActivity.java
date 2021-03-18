@@ -14,14 +14,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         String joinedString = joinThese("Methods ", "are ", "cool ");
-        Log.e("joinedString = ","" + joinedString);
+        Log.i("joinedString = ","" + joinedString);
 
         float area  = getAreaCircle(5f);
-        Log.e("area = ","" + area);
+        Log.i("area = ","" + area);
 
         int a = 0;
         changeA(a);
-        Log.e("a = ","" + a);
+        Log.i("a = ","" + a);
 
     }
 
