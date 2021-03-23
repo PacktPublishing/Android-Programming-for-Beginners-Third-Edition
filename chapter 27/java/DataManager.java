@@ -9,7 +9,7 @@ import android.util.Log;
 public class DataManager {
 
     // This is the actual database
-    private SQLiteDatabase mDB;
+    private SQLiteDatabase db;
 
     /*
         Next we have a public static final string for
@@ -32,13 +32,14 @@ public class DataManager {
     private static final String TABLE_N_AND_A = "name_and_age";
 
     public DataManager(Context context) {
-        // Create an instance of our internal CustomSQLiteOpenHelper class
-        CustomSQLiteOpenHelper helper = new CustomSQLiteOpenHelper(context);
+        // Create an instance of our internal CustomSQLiteOpenHelper
+
+        CustomSQLiteOpenHelper helper = new
+                CustomSQLiteOpenHelper(context);
 
         // Get a writable database
-        mDB = helper.getWritableDatabase();
+        db = helper.getWritableDatabase();
     }
-
 
     // Here are all our helper methods
 
@@ -57,11 +58,9 @@ public class DataManager {
 
         Log.i("insert() = ", query);
 
-        mDB.execSQL(query);
+        db.execSQL(query);
 
     }
-
-
     // Delete a record
     public void delete(String name){
 
@@ -72,13 +71,12 @@ public class DataManager {
 
         Log.i("delete() = ", query);
 
-        mDB.execSQL(query);
+        db.execSQL(query);
 
     }
-
     // Get all the records
     public Cursor selectAll() {
-        Cursor c = mDB.rawQuery("SELECT *" +" from " +
+        Cursor c = db.rawQuery("SELECT *" +" from " +
                 TABLE_N_AND_A, null);
 
         return c;
@@ -96,19 +94,19 @@ public class DataManager {
 
         Log.i("searchName() = ", query);
 
-        Cursor c = mDB.rawQuery(query, null);
+        Cursor c = db.rawQuery(query, null);
 
 
         return c;
     }
-
     // This class is created when our DataManager is initialized
     private class CustomSQLiteOpenHelper extends SQLiteOpenHelper {
         public CustomSQLiteOpenHelper(Context context) {
             super(context, DB_NAME, null, DB_VERSION);
         }
 
-        // This method only runs the first time the database is created
+        // This runs the first time the database is created
+
         @Override
         public void onCreate(SQLiteDatabase db) {
 
@@ -128,12 +126,16 @@ public class DataManager {
         }
 
         // This method only runs when we increment DB_VERSION
-        // We will look at this in chapter 26
+
         @Override
-        public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        public void onUpgrade(SQLiteDatabase db,
+                              int oldVersion, int newVersion) {
+      // Not needed in this app
+     // but we must still override it
 
         }
 
     }
 
 }
+
