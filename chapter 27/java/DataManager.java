@@ -27,9 +27,9 @@ public class DataManager {
         inside this class
     */
 
-    private static final String DB_NAME = "address_book_db";
+    private static final String DB_NAME = "name_age_db";
     private static final int DB_VERSION = 1;
-    private static final String TABLE_N_AND_A = "names_and_addresses";
+    private static final String TABLE_N_AND_A = "name_and_age";
 
     public DataManager(Context context) {
         // Create an instance of our internal CustomSQLiteOpenHelper class
