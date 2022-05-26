@@ -1,3 +1,7 @@
+## [Get this title for $10 on Packt's Spring Sale](https://www.packt.com/B16773?utm_source=github&utm_medium=packt-github-repo&utm_campaign=spring_10_dollar_2022)
+-----
+For a limited period, all eBooks and Videos are only $10. All the practical content you need \- by developers, for developers
+
 # Android Programming for Beginners - Third Edition
 
 <a href="https://www.packtpub.com/product/android-programming-for-beginners-third-edition/9781800563438?utm_source=github&utm_medium=repository&utm_campaign=9781800563438"><img src="https://static.packt-cdn.com/products/9781800563438/cover/smaller" alt="Android Programming for Beginners - Third Edition" height="256px" align="right"></a>
