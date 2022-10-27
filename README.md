@@ -100,3 +100,7 @@ is a programming and gaming enthusiast based in the UK. He has a passion for wri
 * [Beginning C++ Game Programming - Second Edition](https://www.packtpub.com/product/beginning-c-game-programming-second-edition/9781838648572)
 * [Beginning C++ Game Programming](https://www.packtpub.com/product/beginning-c-game-programming/9781786466198)
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800563438">https://packt.link/free-ebook/9781800563438 </a> </p>
